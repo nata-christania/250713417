@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran UKM E-Sport</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Formulir Pendaftaran UKM E-Sport</h1>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td class="label"><label for="nama">Nama Lengkap</label></td>
+                    <td><input type="text" id="nama" name="nama" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><label>Gender</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gen" value="Male" checked="checked" />
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gen" value="Female" />
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="game">Divisi Game</label></td>
+                    <td>
+                        <select id="game" name="game">
+                            <option value="Valorant">Valorant</option>
+                            <option value="Honor of Kings">Honor of Kings</option>
+                            <option value="PUBG Mobile">PUBG Mobile</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="email">Alamat Email</label></td>
+                    <td><input type="text" id="email" name="email" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="wa">Nomor WhatsApp</label></td>
+                    <td><input type="text" id="wa" name="wa" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="pin">PIN Anggota</label></td>
+                    <td><input type="password" id="pin" name="pin" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="photo">Unggah KTM</label></td>
+                    <td><input type="file" id="photo" name="photo" size="18" accept="image/gif, image/jpeg, image/png" /></td>
+                </tr>
+                <tr>
+                    <td class="label"><label for="kota">Kota Asal</label></td>
+                    <td><input type="text" id="kota" name="kota" size="30" /></td>
+                </tr>
+                <tr>
+                    <td class="label" style="vertical-align: top;"><label>Aktivitas &amp; Keterlibatan</label></td>
+                    <td>
+                        <p class="sub-label"><strong>Fokus Aktivitas</strong></p>
+                        <input type="checkbox" id="akt1" name="Aktivitas" value="Kompetisi / Turnamen" />
+                        <label for="akt1">Kompetisi / Turnamen</label>
+                        <input type="checkbox" id="akt2" name="Aktivitas" value="Latihan Rutin" />
+                        <label for="akt2">Latihan Rutin</label>
+                        <input type="checkbox" id="akt3" name="Aktivitas" value="Panitia Event" />
+                        <label for="akt3">Panitia Event</label>
+                        
+                        <p class="sub-label"><strong>Peran Tambahan</strong></p>
+                        <input type="checkbox" id="role1" name="role" value="Streamer" />
+                        <label for="role1">Streamer</label>
+                        <input type="checkbox" id="role2" name="role" value="Content Creator" />
+                        <label for="role2">Content Creator</label>
+                        <input type="checkbox" id="role3" name="role" value="Coach" />
+                        <label for="role3">Coach</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" style="vertical-align: top;"><label for="resume">Riwayat Pengalaman</label></td>
+                    <td><textarea id="resume" name="resume" rows="5" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-row">
+                        <input type="submit" name="Save" value="SUBMIT" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
